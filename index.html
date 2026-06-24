@@ -1,77 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjyot Veluskar</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Sacramento&display=swap" rel="stylesheet">
-    
-    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjyot — Web Developer & Cybersecurity Enthusiast</title>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
 </head>
-
 <body>
 
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="">
-        <h1>I'm Sanjyot.</h1>
-        <h2>A Web Developer.</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="">
-        <img src="images/mountain.png" alt="">
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo">SV<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links" id="navLinks" role="navigation" aria-label="Main">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <!-- Ambient gradient orb (mouse tracking) -->
+    <div class="hero__orb" id="heroOrb"></div>
+
+    <div class="hero__content container">
+      <p class="hero__greet reveal">Hi, my name is</p>
+      <h1 class="hero__name reveal">
+        <span class="hero__name-text gradient-text">Sanjyot</span>
+      </h1>
+      <p class="hero__title reveal">
+        Web Developer <span class="hero__title-amp">&amp;</span> Cybersecurity Enthusiast
+        <span class="hero__cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero__desc reveal">
+        B.Tech CSE student specializing in cybersecurity. I love crafting clean
+        interfaces and understanding how systems tick — from the frontend
+        to the firewall.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#projects" class="btn btn--primary">See my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
     </div>
 
-    <div class="middle-container">
-        <div class="profile">
-            <img class="sv" src="images/sv.jpg" alt="">
-            <h2>Hello.</h2>
-            <p class="intro">I m learning web development from Udemy
-            </p>
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-text">Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section__title reveal">About Me</h2>
+      <div class="about__grid">
+        <div class="about__image reveal">
+          <div class="about__image-frame">
+            <img src="images/sv.jpg" alt="Sanjyot" loading="lazy" />
+          </div>
         </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            <div class="skill-row">
-                <img class="comp" src="images/computer.png" alt="">
-                <h3>Design and Development</h3>
-                <p>started learning to code when I was 18 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing mobile an
-                    web applications.</p>
+        <div class="about__content reveal">
+          <p>
+            I'm a <strong>B.Tech CSE student</strong> with a specialization in
+            <strong>Cybersecurity</strong>. I started coding at 18 because I wanted
+            to build my own video games, and that spark grew into a passion for
+            <strong>web development</strong> — turning designs into living, interactive interfaces.
+          </p>
+          <p>
+            Along the way I discovered <strong>cybersecurity</strong>, and something clicked.
+            The same curiosity that made me want to build things made me want to understand
+            how they break — and how to defend them. Now I'm pursuing both: crafting clean
+            frontends on one side, learning about networks, vulnerabilities, and ethical
+            hacking on the other.
+          </p>
+          <p>
+            Every project teaches me something new — whether it's a CSS grid trick or
+            understanding how a protocol can be exploited. I believe the best developers
+            are also the best security thinkers.
+          </p>
+          <div class="about__tags">
+            <span class="tag tag--sec">B.Tech CSE</span>
+            <span class="tag tag--sec">Cyber Spec.</span>
+            <span class="tag">Web Dev</span>
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">Self-taught</span>
+            <span class="tag">Curious</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section__title reveal">My Skills</h2>
+      <div class="skills__grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="skill-card__title">Design &amp; Development</h3>
+          <p class="skill-card__desc">
+            Crafting responsive layouts and interactive interfaces with modern HTML, CSS, and JavaScript.
+            I focus on clean structure and smooth user experiences.
+          </p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 class="skill-card__title">Problem Solving</h3>
+          <p class="skill-card__desc">
+            Breaking down challenges into manageable pieces and finding clean, efficient solutions.
+            Debugging is just another puzzle to solve — and so is pentesting.
+          </p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="skill-card__title">Cybersecurity</h3>
+          <p class="skill-card__desc">
+            Exploring network security, ethical hacking, and vulnerability analysis.
+            Learning how to think like an attacker to build stronger, safer systems.
+          </p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="skill-card__title">Continuous Learning</h3>
+          <p class="skill-card__desc">
+            Always exploring — from JavaScript frameworks to security protocols.
+            Currently diving into CTF challenges and building projects that bridge
+            dev and security.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section__title reveal">Projects</h2>
+      <p class="section__sub reveal">Things I've built so far on my journey</p>
+      <div class="projects__grid">
+
+        <div class="project-card reveal">
+          <div class="project-card__thumb" style="background: linear-gradient(135deg, #0d9488, #0891b2);">
+            <span class="project-card__label">Coming Soon</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Portfolio Site</h3>
+            <p class="project-card__desc">The site you're looking at! Built from scratch with HTML, CSS, and JavaScript. Responsive, animated, and crafted with care.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--sm">HTML</span>
+              <span class="tag tag--sm">CSS</span>
+              <span class="tag tag--sm">JS</span>
             </div>
-            <div class="skill-row">
-                <img class="chi" src="images/chillies.png" alt="">
-                <h3>Hot Wing Challenge</h3>
-                <p>But my best skill is actually in eating hot wings. I am the undisputed queen of hot wing challenges. Ghost Peppers and Carolina Reapers are my favourite snacks.
-                    </p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__thumb" style="background: linear-gradient(135deg, #059669, #10b981);">
+            <span class="project-card__label">In Progress</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Security Lab</h3>
+            <p class="project-card__desc">Building a home lab to practice penetration testing, network analysis, and ethical hacking. Learning by doing — the only way.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--sm">Network Security</span>
+              <span class="tag tag--sm">Kali Linux</span>
+              <span class="tag tag--sm">CTF</span>
             </div>
+          </div>
         </div>
-        <hr>
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <h3>I love coding</h3>
-            <p>If you also have common interest ? Then let's talk</p>
-            <a class="btn" href="mailto:jayveluskar48@email.com">CONTACT ME</a>
+
+        <div class="project-card reveal">
+          <div class="project-card__thumb" style="background: linear-gradient(135deg, #d97706, #dc2626);">
+            <span class="project-card__label">Upcoming</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Cyber Audit Tool</h3>
+            <p class="project-card__desc">A web-based vulnerability checklist and reporting tool for small websites — combining my dev skills with security knowledge.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--sm">Web App</span>
+              <span class="tag tag--sm">Security</span>
+            </div>
+          </div>
         </div>
+
+      </div>
     </div>
+  </section>
 
-
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/SanjyotV47">Twitter</a>
-        <!-- <a class="footer-link" href="">Website</a> -->
-        <p class="copyright">© 2022 Sanjyot Veluskar.</p>
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__card reveal">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="contact__text">
+          Whether it's about web dev, cybersecurity, a project idea,
+          or just to geek out — I'm always down to connect.
+        </p>
+        <a href="mailto:jayveluskar48@email.com" class="btn btn--primary btn--lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Say Hello
+        </a>
+      </div>
     </div>
+  </section>
 
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://twitter.com/SanjyotV47" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+        <a href="mailto:jayveluskar48@email.com" class="footer__link" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Sanjyot. Built with care.</p>
+    </div>
+  </footer>
 
-
-
-
-
+  <!-- ═══════════ SCRIPTS ═══════════ -->
+  <script src="js/script.js" defer></script>
 </body>
-
 </html>
