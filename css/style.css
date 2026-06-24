@@ -911,7 +911,7 @@ ul {
   }
 }
 
-/* ─────────── 15. FOCUS STYLES ─────────── */
+/* ─────────── 15. FOCUS STYLES ───────────  */
 :focus-visible {
   outline: 2px solid var(--accent-1);
   outline-offset: 3px;
