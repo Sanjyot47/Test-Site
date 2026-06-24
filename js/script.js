@@ -138,7 +138,7 @@
 })();
 
 
-/* ─────────── 5. SMOOTH SCROLL FOR ANCHOR LINKS (progressive enhancement) ─────────── */
+/* ─────────── 5. SMOOTH SCROLL FOR ANCHOR LINKS (progressive enhancement)  ─────────── */
 (function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
